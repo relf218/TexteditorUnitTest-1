@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<meta name="keywords" content="encoding, edit, unicode"> 
+<Title>main</Title>
+<link rel="stylesheet" href="default.css" type="text/css">
+</HEAD>
+<BODY>
+<img src="pics/SwordFight160x83.jpg" alt="picture" width="160" height="83"> 
+<OBJECT id=aboutctrl type="application/x-oleobject"
+        classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+        codebase="hhctrl.ocx#Version=5,2,3790,4110"
+
+>
+    <PARAM name="Command" value="Related Topics">
+    <PARAM name="FrameName" value="Popup">
+    <PARAM name="Item1" value="About;about.htm">
+</OBJECT>
+<br>
+<br>
+<!--
+<a target="About" href="about.htm">About texteditor</a> 
+-->
+<A HREF=JavaScript:aboutctrl.Click()>About</a> 
+<br>
+<h1>texteditor help</h1>
+This text editor has the following features:
+<br>
+<p>
+1.	Edit text files
+</p>
+<p>
+2.	Changing the script encoding of text files.<br>
+	This is needed to edit files in non-latin languages, cyrillic e.g.<br>
+	In this way you also can convert the script encoding.<br><br>
+
+	Example:
+	A Unicode UTF-8 coded text file has to be converted to Windows Cyrillic
+	(Codepage Windows-1251).
+	<ul type="disc">
+	<li>Start texteditor.</li>
+	<li>In menu "Settings- Font" set up script "Eight-bit Unicode (or UCS) Transformation Format".</li>
+	<li>Open source file (UTF-8 coded).</li>
+	<li>Mark and copy all (Ctrl + A, Ctrl + C).</li>
+	<li>Start texteditor one more time (or use the same one)</li>
+	<li>In menu "Settings - Font" set up script "Windows Cyrillic".</li>
+	<li>Paste all by selecting menu "Edit - Paste" or Crtl + V.</li>
+	<li>Save file with a new name.</li>
+	</ul>
+</p>
+<p>
+Parameters:
+<ul type="disc">
+<li><span style="font-family:monospace;font-style:italic">[none]</span> - starts texteditor</li>
+<li><span style="font-family:monospace">--file <span style="font-style:italic">filename</span></span> - starts texteditor and opens the specified file</li>
+<li><span style="font-family:monospace">--display --file <span style="font-style:italic">filename</span></span> - starts texteditor and opens the specified file in read-only mode</li>
+<li><span style="font-family:monospace">--filename <span style="font-style:italic">filename</span> --encoding</span> <span style="font-style:italic">encoding</span> - starts texteditor and opens the specified file with the specified script encoding</li>
+</ul>
+<br>
+Example:
+texteditor.jar --file russian.txt --encoding windows-1251
+</p>
+<br>
+NOTICE:
+Microsoft<sup>&copy;</sup> Excel stores Unicode-Textfiles UTF-16LE with byte-order-mark encoded.<br>
+To show non-latin letters the respective font or language has to be available.<br>
+For example Windows Chinese languages have to be installed before you can show chinese letters.<br>
+</BODY>
+</HTML>

@@ -1,0 +1,9 @@
+Ein einfacher Texteditor programmiert mit Java 1.6
+Autor: Bertram Fritz <bertramfritz@freenet.de>
+
+Systemvoraussetzung: Java Runtime Environment 1.6
+Download unter <http://www.java.com>
+
+Dieses Programm ist Freeware
+Lizensiert unter der GNU General Public License
+<http://gplv3.fsf.org>

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+SplashScreen-Image: splash.jpg
+Main-Class: net.dnsalias.pcb.texteditor.Main
+Class-Path: resources.jar libs.jar silkicons.jar

@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}This program is freeware
+${licensePrefix}Licensed under the GNU General Public License
+${licensePrefix}<http://gplv3.fsf.org>
+<#if licenseLast??>
+${licenseLast}
+</#if>

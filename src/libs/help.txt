@@ -1,0 +1,34 @@
+This text editor has the following features:
+
+1.	Edit text files
+
+2.	Changing the script encoding of text files.
+	This is needed to edit files in non-latin languages, cyrillic e.g.
+	In this way you also can convert the script encoding.
+
+	Example:
+	A Unicode UTF-8 coded text file has to be converted to Windows Cyrillic
+	(Codepage Windows-1251).
+
+	- Start texteditor.
+	- In menu "Settings- Font" set up script "Eight-bit Unicode (or UCS) Transformation Format".
+	- Open source file (UTF-8 coded).
+	- Mark and copy all (Ctrl + A, Ctrl + C).
+	- Start texteditor one more time (or use the same one)
+	- In menu "Settings - Font" set up script "Windows Cyrillic".
+	- Paste all by selecting menu "Edit - Paste" or Crtl + V.
+	- Save file with a new name.
+
+Parameters:
+none - start texteditor
+filename - start texteditor and opens the specified file
+filename  encoding - start texteditor and opens the specified file with the specified script encoding
+
+Example:
+texteditor.jar russian.txt windows-1251
+
+NOTICE:
+Microsoft© Excel stores Unicode-Textfile UTF-16LE with byte-order-mark encoded.  
+To show non-latin letters the respective font or language has to be available.
+For example Windows Chinese languages have to be installed before you can
+show chinese letters.

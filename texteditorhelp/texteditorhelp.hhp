@@ -1,0 +1,24 @@
+[OPTIONS]
+Auto Index=Yes
+Binary Index=No
+Compatibility=1.1 or later
+Compiled file=texteditorhelp.chm
+Contents file=Table of Contents.hhc
+Default Window=Help Viewer
+Default topic=html\main.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 Englisch (USA)
+Title=Help for texteditor
+
+[WINDOWS]
+Help Viewer="Help","Table of Contents.hhc","Index.hhk","html\main.htm","html\main.htm",,"About texteditor",,,0x42020,,0x3046,[271,319,971,1059],,,,,,,0
+Popup="About","Table of Contents.hhc","Index.hhk","html\main.htm",,,,,,0x20,,0x0,[271,372,593,566],0x80000000,,,,,,0
+
+
+[FILES]
+html\about.htm
+html\main.htm
+
+[INFOTYPES]
+
