@@ -20,16 +20,19 @@ public class Recoder
       //System.out.println("Recoder instantiated");
       if(!(args[0].equals("--recode")))
       {
+    	System.out.println("EXIT");
         System.out.println("Usage: texteditor.jar --recode inFile inEncoding outfile outEncoding");
         System.exit(1);
       }
       else
       {
+    	  System.out.println("ok");
         this.inFile = args[1];
         this.inEnc = args[2];
         this.outFile = args[3];
         this.outEnc = args[4];
         init();
+        System.out.println("ok");
       }
     }
     catch(NullPointerException e)

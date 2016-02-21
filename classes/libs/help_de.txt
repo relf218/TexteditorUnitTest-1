@@ -1,0 +1,35 @@
+Dieser einfache Texteditor verfügt über folgende Möglichkeiten:
+
+1.	Textdateien bearbeiten
+
+2.	Das Skript-Encoding für Textdateien einstellen.
+	Wird benötigt, um Texte in Nicht-Latin Sprachen, z.B. Kyrillisch zu editieren.
+	Auf diesem Weg kann auch eine Umwandlung des Skript-Encoding erfolgen.
+
+	Beispiel:
+	Eine Textdatei, die in Unicode UTF-8 kodiert ist, soll nach Windows Cyrillic
+	(Codepage Windows-1251) konvertiert werden.
+
+	- texteditor starten.
+	- Im Menü "Einstellungen - Schriftart" das Skript
+	"Eight-bit Unicode (or UCS) Transformation Format" auswählen.
+	- Die Quelldatei (UTF-8 kodiert) öffnen.
+	- Alles markieren und kopieren (Strg + A, Strg + C).
+	- Weiteren texteditor starten (oder auch nicht).
+	- Im Menü "Einstellungen - Schriftart" das Skript "Windows Cyrillic" auswählen.
+	- Menüpunkt "Bearbeiten - Einfügen" auswählen oder Tastenkombination Strg + V drücken.
+	- Datei (evtl. unter anderem Namen) speichern.
+
+Parameter:
+Keine - Startet texteditor
+Dateiname - Started texteditor und öffnet die angegebene Datei
+Dateiname Encoding - Started texteditor und öffnet die angegebene Datei mit dem angegebenen Skript-Encoding
+
+Beispiel:
+texteditor.jar russian.txt windows-1251
+
+Wichtiger Hinweis:
+Microsoft© Excel speichert Unicode-Text UTF-16LE mit Signatur(BOM) kodiert.  
+Um Nicht-Latin Zeichen darzustellen, müssen diese natürlich auch verfügbar sein.
+Chinesisch zum Beispiel muss unter Windows zunächst installiert werden.
+ 
