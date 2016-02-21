@@ -121,4 +121,6 @@ public class testTexteditor {
 		assertEquals(rbLineEndingMac.isSelected(), false);
 		assertEquals(rbLineEndingDefault.isSelected(), false);
 	}
+	
+	
 }
